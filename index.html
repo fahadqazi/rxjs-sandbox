@@ -9,9 +9,33 @@
         body { font-family: 'Arial'; background: lightgray }
         ul { list-style-type: none; padding: 20px; }
         li { padding: 15px; background: lightcoral; margin-bottom: 10px; }
+        img {height: 70px; border-radius: 50px;}
     </style>
 </head>
 <body>
+    <div class="container">
+        <div class="header">
+            <h3>Who to follow</h3><a href="#" class="refresh">Refresh</a>
+        </div>
+        <ul class="suggestions">
+            <li class="suggestion1">
+                <img />
+                <a href="#" target="_blank" class="username">this will not be displayed</a>
+                <a href="#" class="close">x</a>
+            </li>
+            <li class="suggestion2">
+                <img />
+                <a href="#" target="_blank" class="username">neither this</a>
+                <a href="#" class="close">x</a>
+            </li>
+            <li class="suggestion3">
+                <img />
+                <a href="#" target="_blank" class="username">not this</a>
+                <a href="#" class="close">x</a>
+            </li>
+        </ul>
+    </div>
+
 
     <script src="/bundle.js"></script>
 </body>
