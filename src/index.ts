@@ -26,11 +26,13 @@ const responseStream$ = requestStream$.pipe(
     shareReplay(1)
 );
 
+function getRandomUser(listUsers: any) {
+    return listUsers[Math.floor(Math.random() * listUsers.length)]
+}
+
 function createSuggestionStream(responseStream: any) {
     return responseStream.pipe(
-        map((listUser: any) => {
-            return listUser[Math.floor(Math.random() * listUser.length)]
-        })
+        map(getRandomUser)
     )
 };
 
